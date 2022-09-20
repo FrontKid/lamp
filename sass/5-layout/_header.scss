@@ -1,0 +1,142 @@
+.header {
+   position: relative;
+}
+.header__top {
+   background-color: var(--lightgrey);
+   color: var(--headerTop);
+   font-size: 15px;
+   line-height: 145%;
+   padding: 10px 0;
+}
+.header__top-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__top-city {
+   padding-left: 23px;
+   cursor: pointer;
+   position: relative;
+   transition: all 0.3s ease 0s;
+   svg {
+      position: absolute;
+      left: 0;
+   }
+   &:hover path {
+      stroke: var(--lightBlack);
+   }
+   &:hover {
+      color: var(--lightBlack);
+   }
+}
+.header__top-list {
+   display: flex;
+   gap: 24px;
+}
+.header__top-link:hover {
+   color: var(--lightBlack);
+}
+//------------------------------
+.header__main {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 17px;
+   margin-bottom: 18px;
+}
+.header__main-center {
+   display: flex;
+   gap: 16px;
+}
+.header__main-center-btn {
+   padding-left: 56px;
+   position: relative;
+   svg {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+   &:hover path {
+      stroke: var(--grey);
+   }
+}
+.header__main-center-search {
+   width: 444px;
+   position: relative;
+   &::after {
+      content: "";
+      background-image: url(/img/icons/search.svg);
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: text;
+   }
+}
+
+.header__main-center-search-value {
+   display: block;
+   height: 100%;
+   width: 100%;
+   padding-left: 16px;
+   padding-right: 37px;
+   background-color: var(--lightgrey);
+   border: none;
+   border-bottom: 1px solid var(--grey);
+   outline: none;
+   &:focus {
+      border-bottom: 1px solid var(--hardGrey);
+   }
+}
+
+.header__main-icons {
+   display: flex;
+   gap: 25px;
+   color: var(--thinBlack);
+}
+.header__main-icon {
+   padding-top: 26px;
+   position: relative;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+   svg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   &:hover path {
+      stroke: var(--lightBlack);
+   }
+   &:hover {
+      color: var(--lightBlack);
+   }
+}
+
+//---------------------------------
+
+.header__bottom-nav::after,
+.header__bottom-nav::before {
+   content: "";
+   height: 1px;
+   width: 100%;
+   background-color: var(--decorLine);
+   position: absolute;
+   left: 0;
+   right: 0;
+}
+
+.header__bottom-list {
+   display: flex;
+   padding: 10px 0;
+   justify-content: space-between;
+   color: var(--thinBlack);
+}
+
+.header__bottom-item:hover {
+   color: var(--black);
+}

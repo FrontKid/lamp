@@ -12,6 +12,11 @@ html {
 }
 body {
    margin: 0;
+   font-family: "Manrope", Arial, Helvetica, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
 }
 main {
    display: block;
@@ -40,6 +45,9 @@ pre {
 }
 a {
    background-color: transparent;
+   text-decoration: none;
+   color: inherit;
+   transition: all 0.3s ease 0s;
 }
 abbr[title] {
    border-bottom: none;
@@ -49,6 +57,11 @@ abbr[title] {
 b,
 strong {
    font-weight: bolder;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
 }
 code,
 kbd,
@@ -162,9 +175,8 @@ template {
    display: none;
 }
 
-.container{
-   max-width: 1440px;
+.container {
+   max-width: 1160px;
    width: 100%;
    margin: 0 auto;
-   padding: 0 20px;
 }

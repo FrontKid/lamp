@@ -15,6 +15,11 @@ html {
 
 body {
   margin: 0;
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 main {
@@ -48,6 +53,9 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease 0s;
 }
 
 abbr[title] {
@@ -60,6 +68,12 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 code,
@@ -199,21 +213,23 @@ template {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1160px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 :root {
   --yellow: #fdf074;
+  --hardYellow: #fcec41;
   --lightgrey: #f6f6f6;
   --grey: #d1d1d3;
   --hardGrey: #8b8d92;
   --black: #171b24;
-  --white: #E8E9EA;
   --lightBlack: #2f323a;
+  --thinBlack: #454950;
+  --white: #e8e9ea;
   --headerTop: #5d6066;
+  --decorLine: #e8e9ea;
 }
 
 /*========================================
@@ -228,6 +244,25 @@ template {
 /*========================================
             ELEMENT STYLE START
 =========================================*/
+.btn {
+  background-color: var(--hardYellow);
+  border: none;
+  padding: 12px 24px;
+  color: var(--black);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover {
+  background-color: var(--lightBlack);
+  color: var(--grey);
+}
+
+.logo {
+  cursor: pointer;
+  display: block;
+}
+
 /*========================================
             ELEMENT STYLE END
 =========================================*/
@@ -236,6 +271,156 @@ template {
 <<<<<<< HEAD
 =======
 =========================================*/
+.header {
+  position: relative;
+}
+
+.header__top {
+  background-color: var(--lightgrey);
+  color: var(--headerTop);
+  font-size: 15px;
+  line-height: 145%;
+  padding: 10px 0;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-city {
+  padding-left: 23px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.header__top-city svg {
+  position: absolute;
+  left: 0;
+}
+.header__top-city:hover path {
+  stroke: var(--lightBlack);
+}
+.header__top-city:hover {
+  color: var(--lightBlack);
+}
+
+.header__top-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header__top-link:hover {
+  color: var(--lightBlack);
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 18px;
+}
+
+.header__main-center {
+  display: flex;
+  gap: 16px;
+}
+
+.header__main-center-btn {
+  padding-left: 56px;
+  position: relative;
+}
+.header__main-center-btn svg {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__main-center-btn:hover path {
+  stroke: var(--grey);
+}
+
+.header__main-center-search {
+  width: 444px;
+  position: relative;
+}
+.header__main-center-search::after {
+  content: "";
+  background-image: url(/img/icons/search.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: text;
+}
+
+.header__main-center-search-value {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 37px;
+  background-color: var(--lightgrey);
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  outline: none;
+}
+.header__main-center-search-value:focus {
+  border-bottom: 1px solid var(--hardGrey);
+}
+
+.header__main-icons {
+  display: flex;
+  gap: 25px;
+  color: var(--thinBlack);
+}
+
+.header__main-icon {
+  padding-top: 26px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header__main-icon svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__main-icon:hover path {
+  stroke: var(--lightBlack);
+}
+.header__main-icon:hover {
+  color: var(--lightBlack);
+}
+
+.header__bottom-nav::after,
+.header__bottom-nav::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--decorLine);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.header__bottom-list {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  color: var(--thinBlack);
+}
+
+.header__bottom-item:hover {
+  color: var(--black);
+}
+
 /*========================================
             LAYOUT STYLE END
 =========================================*/
