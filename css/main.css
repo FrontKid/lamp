@@ -218,6 +218,11 @@ template {
   margin: 0 auto;
 }
 
+@media (max-width: 1181px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 :root {
   --yellow: #fdf074;
   --hardYellow: #fcec41;
@@ -321,11 +326,25 @@ template {
   align-items: center;
   margin-top: 17px;
   margin-bottom: 18px;
+  gap: 16px;
+}
+.header__main::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--decorLine);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 44px;
 }
 
 .header__main-center {
   display: flex;
   gap: 16px;
+  max-width: 604px;
+  width: 100%;
+  margin-left: 90px;
 }
 
 .header__main-center-btn {
@@ -343,8 +362,8 @@ template {
 }
 
 .header__main-center-search {
-  width: 444px;
   position: relative;
+  width: 100%;
 }
 .header__main-center-search::after {
   content: "";
@@ -362,6 +381,7 @@ template {
 .header__main-center-search-value {
   display: block;
   height: 100%;
+  min-width: 248px;
   width: 100%;
   padding-left: 16px;
   padding-right: 37px;
@@ -376,7 +396,7 @@ template {
 
 .header__main-icons {
   display: flex;
-  gap: 25px;
+  gap: 19px;
   color: var(--thinBlack);
 }
 
@@ -399,8 +419,7 @@ template {
   color: var(--lightBlack);
 }
 
-.header__bottom-nav::after,
-.header__bottom-nav::before {
+.header__bottom-nav::after {
   content: "";
   height: 1px;
   width: 100%;
@@ -421,6 +440,48 @@ template {
   color: var(--black);
 }
 
+@media (max-width: 971px) {
+  .header__main-center {
+    margin-left: 0;
+  }
+  .header__bottom-nav {
+    display: none;
+  }
+  .header__main::after {
+    bottom: -15px;
+  }
+}
+@media (max-width: 867px) {
+  .header__top-item:nth-child(1),
+.header__top-item:nth-child(4) {
+    display: none;
+  }
+  .header__main {
+    padding-bottom: 58px;
+  }
+  .header__main-center {
+    justify-content: center;
+  }
+  .header__main-center-search {
+    position: absolute;
+    height: 48px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 10px;
+  }
+  .header__main-icons {
+    gap: 12px;
+  }
+  .header__main-icon {
+    font-size: 15px;
+  }
+  .header__main-center-btn {
+    padding-left: 50px;
+    max-width: 280px;
+    width: 100%;
+  }
+}
 /*========================================
             LAYOUT STYLE END
 =========================================*/
