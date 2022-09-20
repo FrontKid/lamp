@@ -198,13 +198,21 @@ template {
   display: none;
 }
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 :root {
   --yellow: #fdf074;
   --lightgrey: #f6f6f6;
   --grey: #d1d1d3;
   --hardGrey: #8b8d92;
   --black: #171b24;
-  --text: #2f323a;
+  --white: #E8E9EA;
+  --lightBlack: #2f323a;
   --headerTop: #5d6066;
 }
 
@@ -225,6 +233,8 @@ template {
 =========================================*/
 /*========================================
             LAYOUT STYLE START
+<<<<<<< HEAD
+=======
 =========================================*/
 /*========================================
             LAYOUT STYLE END
