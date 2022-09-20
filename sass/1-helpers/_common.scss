@@ -18,8 +18,17 @@ main {
 }
 h1 {
    font-size: 2em;
-   margin: 0.67em 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+}
+
 hr {
    box-sizing: content-box;
    height: 0;
@@ -151,4 +160,11 @@ template {
 }
 [hidden] {
    display: none;
+}
+
+.container{
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
 }
