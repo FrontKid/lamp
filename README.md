@@ -1,5 +1,14 @@
 # lamp
 online store
 
-Denys:
-   Disable hover effect on touch screen JQ
+Created by:
+  Denys:
+    -header
+
+
+
+
+To Change:
+  Denys:
+    Disable hover effect on touch screen JQ
+    change navbar-burger's icon when it's opened

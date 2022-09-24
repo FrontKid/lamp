@@ -291,6 +291,7 @@ template {
 
 .header {
   position: relative;
+  background-color: #fff;
 }
 
 .header__top {
@@ -533,9 +534,6 @@ template {
     width: 100%;
     text-align: center;
     position: relative;
-  }
-  section {
-    background-color: red;
   }
   .header__nav-burger {
     display: block;
