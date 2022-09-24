@@ -1,3 +1,6 @@
+//*****************************/
+//*****BURGER NAVBAR START*****/
+//*****************************/
 function headerBurger() {
   const closeNav = document.getElementById('header__nav-burger-hub-1-field')
   return closeNav.addEventListener("click", () => {
@@ -8,3 +11,17 @@ function headerBurger() {
   })
 }
 headerBurger()
+//*****************************/
+//*****BURGER NAVBAR END*******/
+//*****************************/
+
+//*****************************/
+//*********SLIDER START********/
+//*****************************/
+$(document).ready(() => {
+  $('.slider').slick()
+})
+
+//*****************************/
+//*********SLIDER END**********/
+//*****************************/

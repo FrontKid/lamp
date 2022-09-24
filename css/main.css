@@ -268,13 +268,36 @@ template {
   display: block;
 }
 
+.slick-slider {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+}
+
+.slick-arrow.slick-prev {
+  right: 120px;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
 /*========================================
             ELEMENT STYLE END
 =========================================*/
 /*========================================
             LAYOUT STYLE START
-<<<<<<< HEAD
-=======
 =========================================*/
 .header__main-center-mobile {
   display: none;
