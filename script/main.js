@@ -19,7 +19,14 @@ headerBurger()
 //*********SLIDER START********/
 //*****************************/
 $(document).ready(() => {
-  $('.slider').slick()
+  $('.slider').slick({
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    cssEase: 'linear',
+    mobileFirst: true
+  })
 })
 
 //*****************************/
