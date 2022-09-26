@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*========================================
             COMMON STYLE START
 =========================================*/
@@ -269,32 +268,15 @@ template {
   display: block;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
   max-height: 420px;
 }
 
-/* Лента слайдов */
 .slick-track {
   display: flex;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 .index-slider-top {
   position: relative;
   max-width: 1340px;
@@ -306,7 +288,6 @@ template {
   position: absolute;
   z-index: 5;
   right: 10px;
-  font-size: 0;
   width: 52px;
   height: 52px;
   background-color: #fff;
@@ -315,39 +296,26 @@ template {
   transition: all 0.3s ease 0s;
   bottom: 40px;
 }
+.index-slider-top .slick-arrow svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .index-slider-top .slick-arrow:hover {
   background-color: var(--lightBlack);
   border-color: var(--lightBlack);
+}
+.index-slider-top .slick-arrow:hover path {
+  stroke: #ffffff;
 }
 
 .index-slider-top .slick-arrow.slick-prev {
   right: 164px;
 }
-.index-slider-top .slick-arrow.slick-prev::before {
-  content: "";
-  background-image: url(/img/slider/arrows/left.svg);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .index-slider-top .slick-arrow.slick-next {
   right: 100px;
-}
-.index-slider-top .slick-arrow.slick-next::before {
-  content: "";
-  background-image: url(/img/slider/arrows/right.svg);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .slider__item {
@@ -383,6 +351,66 @@ template {
   left: 100px;
 }
 
+@media (max-width: 950px) {
+  .slider__item-img {
+    -o-object-position: -50px 0;
+       object-position: -50px 0;
+  }
+  .index-slider-top .slick-arrow.slick-prev {
+    right: 104px;
+  }
+  .index-slider-top .slick-arrow.slick-next {
+    right: 40px;
+  }
+  .slider__item-desc {
+    padding-right: 10px;
+    left: 40px;
+  }
+  .slider__item-btn {
+    left: 40px;
+  }
+}
+@media (max-width: 570px) {
+  .slider__item-img {
+    -o-object-position: -200px 0;
+       object-position: -200px 0;
+  }
+  .slider__item-heading {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+    max-width: 255px;
+  }
+  .slider__item-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+  }
+  .slick-dots {
+    position: absolute;
+    right: 28px;
+    bottom: 46px;
+    display: flex;
+    gap: 12px;
+  }
+  .slick-dots button {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 8px;
+    background-color: var(--hardGrey);
+  }
+  .slick-dots li.slick-active button {
+    background-color: var(--hardYellow);
+  }
+}
+@media (max-width: 430px) {
+  .slider__item-img {
+    -o-object-position: -230px 0;
+       object-position: -230px 0;
+  }
+}
 /*========================================
             ELEMENT STYLE END
 =========================================*/
@@ -656,6 +684,7 @@ template {
     height: 100%;
     left: 0;
     top: 145px;
+    z-index: 100;
     transition: all 0.5s ease 0s;
     transform: translateX(-100%);
     overflow-y: scroll;
