@@ -5,7 +5,7 @@ Created by:
   Denys:
     -header
     -slider
-
+  Vika:
 
 
 
@@ -14,3 +14,4 @@ To Change:
     Disable hover effect on touch screen JQ
     change navbar-burger's icon when it's opened
     Set up preloader on slider photo's (fix bugs)
+  Vika:
