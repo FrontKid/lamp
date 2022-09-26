@@ -411,6 +411,23 @@ template {
        object-position: -230px 0;
   }
 }
+@media (max-width: 330px) {
+  .slider__item-img {
+    -o-object-position: -350px 0;
+       object-position: -350px 0;
+  }
+  .slider__item-desc {
+    padding-right: 10px;
+    left: 10px;
+  }
+  .slider__item-btn {
+    left: 10px;
+    bottom: 70px;
+  }
+  .slick-dots {
+    bottom: 30px;
+  }
+}
 /*========================================
             ELEMENT STYLE END
 =========================================*/
