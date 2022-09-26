@@ -5,6 +5,7 @@ Created by:
   Denys:
     -header
     -slider
+    -about
   Vika:
 
 

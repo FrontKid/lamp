@@ -1,3 +1,7 @@
+/*=====================================
+            ABOUT BLOCK STYLE
+======================================*/
+
 .about {
   max-width: 1325px;
   margin: 0 auto;
@@ -22,6 +26,8 @@
 .about__desc:not(:last-child) {
   margin-bottom: 35px;
 }
+
+// RESPONSIVE STYLE
 
 @media (max-width: 1024px) {
   .about {

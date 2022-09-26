@@ -1,3 +1,7 @@
+/*=====================================
+            SLIDER STYLE
+======================================*/
+
 .slick-list {
   overflow: hidden;
   max-height: 420px;
@@ -76,6 +80,7 @@
   left: 100px;
 }
 
+// responsive styles
 @media (max-width: 950px) {
   .slider__item-img {
     object-position: -50px 0;

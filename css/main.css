@@ -249,6 +249,9 @@ template {
 /*========================================
             ELEMENT STYLE START
 =========================================*/
+/*=====================================
+            BTN STYLE
+======================================*/
 .btn {
   background-color: var(--hardYellow);
   border: none;
@@ -263,11 +266,17 @@ template {
   color: var(--grey);
 }
 
+/*=====================================
+            LOGO STYLE
+======================================*/
 .logo {
   cursor: pointer;
   display: block;
 }
 
+/*=====================================
+            SLIDER STYLE
+======================================*/
 .slick-list {
   overflow: hidden;
   max-height: 420px;
@@ -428,6 +437,9 @@ template {
     bottom: 30px;
   }
 }
+/*=====================================
+            ABOUT BLOCK STYLE
+======================================*/
 .about {
   max-width: 1325px;
   margin: 0 auto;
