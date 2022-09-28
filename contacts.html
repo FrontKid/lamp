@@ -44,7 +44,7 @@
 
   <!-- CUSTOM -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/contacts.css">
 
   <!--=====================================
                   CSS LINK PART END
@@ -318,42 +318,57 @@
         =======================================-->
 
   <!--=====================================
-                    SLIDER PART START
+                    "MAP PART START
+        =======================================-->
+  <section class="map container">
+    <h1 class="map__title title">Контакты</h1>
+    <div class="map__item" id="map"></div>
+  </section>
+  <!--=====================================
+                    MAP PART END
         =======================================-->
 
-  <section class="index-slider-top slider">
-    <div class="slider__item">
-      <button class="slider__item-btn btn">Подробнее</button>
-      <img class="slider__item-img" src="/img/slider/1.jpg" alt="Специальные предложения">
-      <div class="slider__item-desc">
-        <h1 class="slider__item-heading title">Специальные предложения</h1>
-        <p class="slider__item-text">на строительные материалы<br>и товары для ремонта</p>
+  <!--=====================================
+                    INFO PART START
+        =======================================-->
+  <section class="info container">
+    <h2 class="info__title sub-title">ООО «СтройкаСтор»</h2>
+    <div class="info__main">
+      <div class="info__main-item">
+        <p class="info__main-item-text">
+          115114, г. Москва, Дербеневская набережная, д. 7, стр. 8
+        </p>
+        <p class="info__main-item-text">
+          Павелецкая<br>
+          Автобусы 13, 106, 158, 184, 632
+          Остановка «Дербеневская наб., д. 7»
+        </p>
       </div>
-    </div>
-    <div class="slider__item">
-      <button class="slider__item-btn btn">Подробнее</button>
-      <img class="slider__item-img" src="/img/slider/2.jpg" alt="Специальные предложения">
-      <div class="slider__item-desc">
-        <h2 class="slider__item-heading title">Распродажа инструментов</h2>
-        <p class="slider__item-text">«СтройкаСтор» стремится сделать условия покупки максимально выгодными для каждого
-          покупателя, поэтому на сайте регулярно появляются товары со скидкой</p>
+      <div class="info__main-item">
+        <p class="info__main-item-text">ОГРН: 1047796688554</p>
+        <p class="info__main-item-text">ИНН 7703528301</p>
+        <p class="info__main-item-text">КПП 774850001</p>
+        <p class="info__main-item-text">ОКТМО 45380000</p>
+        <p class="info__main-item-text">ОГРН 1047796688554</p>
+        <p class="info__main-item-text">Расчетный рублевый счет: 40702810900001403352</p>
+        <p class="info__main-item-text">Банк: АО «Сбербанк» г. Москва</p>
+        <p class="info__main-item-text">Корреспондентский счет: 30101810200000000700</p>
+        <p class="info__main-item-text">БИК: 044525700</p>
       </div>
-    </div>
-    <div class="slider__item">
-      <img src="/img/slider/3.jpg" src="/img/slider/3.jpg" alt="Специальные предложения">
+      <div class="info__main-item">
+        <p class="info__main-item-text">Поддержка клиентов info@stroykastore.ru</p>
+      </div>
     </div>
   </section>
-
   <!--=====================================
-                    SLIDER PART END
+                    INFO PART END
         =======================================-->
 
   <!--=====================================
                     ABOUT PART START
         =======================================-->
-
   <section class="index__about about">
-    <h2 class="about__title">О компании</h2>
+    <h2 class="about__title sub-title">О компании</h2>
     <p class="about__desc">
       В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта дома и дачи. Хотите сделать ремонт в
       квартире? Строите загородный дом? Используйте строительные и отделочные материалы из нашего каталога.
@@ -371,6 +386,7 @@
                     ABOUT PART END
         =======================================-->
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQns3WkOZP5bWYNMBq6YoEFc1_U1V1D3k"></script>
   <script src="/script/src/jquery.min.js"></script>
   <script src="/script/src/slick.min.js"></script>
   <script src="/script/main.js" defer></script>

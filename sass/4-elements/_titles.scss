@@ -1,0 +1,31 @@
+.title {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+.sub-title {
+  color: var(--lightBlack);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 130%;
+}
+@media (max-width: 800px) {
+  .title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 130%;
+  }
+  .sub-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 26px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+}

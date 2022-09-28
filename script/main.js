@@ -3,7 +3,9 @@
 //*****************************/
 function headerBurger() {
   const closeNav = document.getElementById('header__nav-burger-hub-1-field')
+
   return closeNav.addEventListener("click", () => {
+
     const navPopUp = document.querySelector('.header__nav-burger')
     const body = document.getElementById('body')
     navPopUp.classList.toggle('header__nav-burger--active')
@@ -55,4 +57,47 @@ $(document).ready(() => {
 })
 //*****************************/
 //*********SLIDER END**********/
+//*****************************/
+
+//*****************************/
+//*********MAP START***********/
+//*****************************/
+
+function initMap() {
+  //*Coordinates
+  const coordinates = { lat: 46.446717633227095, lng: 30.708664031967036 }
+
+  //*Init map
+  const map = new google.maps.Map(document.getElementById('map'), {
+    center: coordinates,
+    zoom: 19,
+    disableDefaultUI: false,
+  });
+
+  //*Create icon
+  const image = '/img/icons/google-map-marker.svg'
+
+  //*Create marker
+  const marker = new google.maps.Marker({
+    position: coordinates,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: image
+  });
+
+  //*popUpContent
+  const popupContent = `<p class="content"></p>`
+
+  const infowindow = new google.maps.InfoWindow({
+    content: popupContent
+  });
+  //default open popUp
+
+  infowindow.open(map, marker);
+
+}
+initMap()
+
+//*****************************/
+//*********MAP END***********/
 //*****************************/
