@@ -118,17 +118,11 @@
   display: block;
   height: 100%;
   min-width: 248px;
-  width: 100%;
   padding-left: 16px;
   padding-right: 37px;
-  background-color: var(--lightgrey);
-  border: none;
-  border-bottom: 1px solid var(--grey);
-  outline: none;
-  &:focus {
-    border-bottom: 1px solid var(--hardGrey);
-  }
+
 }
+
 
 .header__main-icons {
   display: flex;

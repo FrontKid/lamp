@@ -105,6 +105,16 @@ button,
 input {
   overflow: visible;
 }
+input {
+  width: 100%;
+  background-color: var(--lightgrey);
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  outline: none;
+  &:focus {
+    border-bottom: 1px solid var(--hardGrey);
+  }
+}
 button,
 select {
   text-transform: none;

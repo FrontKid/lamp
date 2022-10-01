@@ -44,7 +44,7 @@
 
   <!-- CUSTOM -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/contacts.css">
+  <link rel="stylesheet" href="/css/authorization.css">
 
   <!--=====================================
                   CSS LINK PART END
@@ -80,7 +80,8 @@
             <li class="header__top-item nav__item"><a class="header__top-link nav__link" href="#">Возврат</a></li>
             <li class="header__top-item nav__item"><a class="header__top-link nav__link" href="#">Документация</a>
             </li>
-            <li class="header__top-item nav__item"><a class="header__top-link nav__link" href="#">Контакты</a>
+            <li class="header__top-item nav__item"><a class="header__top-link nav__link"
+                href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -183,7 +184,7 @@
       </div>
       <div class="header__main-icons">
 
-        <a class="header__main-icon" href="/authorization.html">
+        <a href="/authorization.html" class="header__main-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
@@ -318,75 +319,56 @@
         =======================================-->
 
   <!--=====================================
-                    "MAP PART START
+                    AUTHOR PART START
         =======================================-->
-  <section class="map container">
-    <h1 class="map__title title">Контакты</h1>
-    <div class="map__item" id="map"></div>
+  <section class="author container-au">
+    <h1 class="author__title title">Личный кабинет</h1>
+    <form class="author-form" action="#">
+      <h2 class="author__sub-title sub-title">Личная информация</h2>
+      <div class="author__name">
+        <label class="author__name-input-l">
+          <span>Имя</span>
+          <input class="author__name-input" type="text" autocomplete placeholder="">
+        </label>
+        <label class="author__name-input-l">
+          <span>Фамилия</span>
+          <input class="author__name-input" type="text" autocomplete placeholder="">
+        </label>
+      </div>
+      <div class="author__name">
+        <label class="author__name-input-l">
+          <span>Дата рождения</span>
+          <input class="author__name-input" type="text" autocomplete placeholder="">
+        </label>
+        <label class="author__name-input-l">
+          <span>Телефон</span>
+          <input class="author__name-input" type="text" autocomplete placeholder="">
+        </label>
+      </div>
+      <div class="author__name">
+        <label class="author__name-input-l">
+          <span>E-mail</span>
+          <input class="author__name-input" type="email" autocomplete placeholder="">
+        </label>
+      </div>
+      <div class="author__name">
+        <label class="author__name-input-l">
+          <span>Новый пароль</span>
+          <input class="author__name-input" type="password" autocomplete placeholder="">
+        </label>
+        <label class="author__name-input-l">
+          <span>Подтверждение пароля</span>
+          <input class="author__name-input" type="password" autocomplete placeholder="">
+        </label>
+      </div>
+      <button class="btn">Сохранить</button>
+    </form>
   </section>
   <!--=====================================
-                    MAP PART END
+                    AUTHOR PART END
         =======================================-->
 
-  <!--=====================================
-                    INFO PART START
-        =======================================-->
-  <section class="info container">
-    <h2 class="info__title sub-title">ООО «СтройкаСтор»</h2>
-    <div class="info__main">
-      <div class="info__main-item">
-        <p class="info__main-item-text">
-          115114, г. Москва, Дербеневская набережная, д. 7, стр. 8
-        </p>
-        <p class="info__main-item-text">
-          Павелецкая<br>
-          Автобусы 13, 106, 158, 184, 632
-          Остановка «Дербеневская наб., д. 7»
-        </p>
-      </div>
-      <div class="info__main-item">
-        <p class="info__main-item-text">ОГРН: 1047796688554</p>
-        <p class="info__main-item-text">ИНН 7703528301</p>
-        <p class="info__main-item-text">КПП 774850001</p>
-        <p class="info__main-item-text">ОКТМО 45380000</p>
-        <p class="info__main-item-text">ОГРН 1047796688554</p>
-        <p class="info__main-item-text">Расчетный рублевый счет: 40702810900001403352</p>
-        <p class="info__main-item-text">Банк: АО «Сбербанк» г. Москва</p>
-        <p class="info__main-item-text">Корреспондентский счет: 30101810200000000700</p>
-        <p class="info__main-item-text">БИК: 044525700</p>
-      </div>
-      <div class="info__main-item">
-        <p class="info__main-item-text">Поддержка клиентов info@stroykastore.ru</p>
-      </div>
-    </div>
-  </section>
-  <!--=====================================
-                    INFO PART END
-        =======================================-->
 
-  <!--=====================================
-                    ABOUT PART START
-        =======================================-->
-  <section class="index__about about">
-    <h2 class="about__title sub-title">О компании</h2>
-    <p class="about__desc">
-      В СтройкаСтор вы всегда можете купить все необходимые товары для ремонта дома и дачи. Хотите сделать ремонт в
-      квартире? Строите загородный дом? Используйте строительные и отделочные материалы из нашего каталога.
-    </p>
-    <p class="about__desc">
-      Быстрая доставка строительных товаров по низким ценам сделает ваши покупки более приятными. Ремонт может стоить
-      дешево, если делать его с нами. Для вас всегда в наличии более 30 000 товаров для строительства по низким ценам
-      каждый день.
-      СтройкаСтор — это широкий ассортимент товаров для дома и ремонта недорого; Возможность заказать строительные и
-      отделочные материалы для дома и дачи.
-    </p>
-  </section>
-
-  <!--=====================================
-                    ABOUT PART END
-        =======================================-->
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQns3WkOZP5bW"></script>
   <script src="/script/src/jquery.min.js"></script>
   <script src="/script/src/slick.min.js"></script>
   <script src="/script/main.js" defer></script>
