@@ -68,7 +68,7 @@
     content: "";
     height: 1px;
     width: 100%;
-    background-color: var(--decorLine);
+    background-color: var(--white);
     position: absolute;
     left: 0;
     right: 0;
@@ -120,9 +120,7 @@
   min-width: 248px;
   padding-left: 16px;
   padding-right: 37px;
-
 }
-
 
 .header__main-icons {
   display: flex;
@@ -156,7 +154,7 @@
   content: "";
   height: 1px;
   width: 100%;
-  background-color: var(--decorLine);
+  background-color: var(--white);
   position: absolute;
   left: 0;
   right: 0;
