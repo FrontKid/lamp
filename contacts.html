@@ -53,6 +53,42 @@
 </head>
 
 <body id="body">
+  <!--===================================================
+                  REGISTRATION POPUP PART START
+        =================================================-->
+  <div class="reg">
+    <div class="reg__area">
+      <h2 class="reg__title sub-title">Регистрация</h2>
+      <form class="reg__form" action="#">
+        <div class="reg__form-inner">
+          <div class="reg__form-item">
+            <label class="reg__form-label">
+              <span>Имя</span>
+              <input class="reg__form-item-value" placeholder="Богдан" type="text">
+            </label>
+            <label class="reg__form-label">
+              <span>Новый пароль</span>
+              <input class="reg__form-item-value" placeholder="****************" type="password">
+            </label>
+          </div>
+          <div class="reg__form-item">
+            <label class="reg__form-label">
+              <span>E-mail</span>
+              <input class="reg__form-item-value" placeholder="youmail@mail.com" type="email">
+            </label>
+            <label class="reg__form-label">
+              <span>Подтверждение пароля</span>
+              <input class="reg__form-item-value" placeholder="****************" type="password">
+            </label>
+          </div>
+        </div>
+        <button class="reg__form-btn btn" type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+  <!--===================================================
+                        REGISTRATION POPUP PART END
+              =================================================-->
 
   <!--=====================================
                     HEADER PART START
@@ -183,7 +219,7 @@
       </div>
       <div class="header__main-icons">
 
-        <a class="header__main-icon" href="/authorization.html">
+        <a class="header__main-icon" href="">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
@@ -192,7 +228,7 @@
               d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
               stroke="#5D6066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          Профиль
+          Вход
         </a>
         <p class="header__main-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,9 +287,9 @@
       <button class="header__nav-burger-btn-catalog btn">
         <span>Каталог</span>
       </button>
-      <button
+      <button id="profile-mob"
         class="header__nav-burger-btn-catalog header__nav-burger-btn-catalog--icon1 header__nav-burger-btn-catalog--trans btn">
-        <span>Профиль</span>
+        <span>Вход</span>
       </button>
       <button
         class="header__nav-burger-btn-catalog header__nav-burger-btn-catalog--icon2 header__nav-burger-btn-catalog--trans btn">

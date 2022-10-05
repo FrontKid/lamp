@@ -96,8 +96,34 @@ function initMap() {
   infowindow.open(map, marker);
 
 }
-initMap()
+//initMap()
 
 //*****************************/
 //*********MAP END***********/
 //*****************************/
+
+function registrationField() {
+  const profiles = [document.querySelector('.header__main-icon'),
+  document.getElementById('profile-mob')]
+
+  const reg = document.querySelector('.reg')
+  const body = document.getElementById('body')
+
+  profiles.forEach(prof => prof.addEventListener('click', (e) => {
+
+    e.preventDefault()
+    reg.classList.add('open-pop-up')
+    body.classList.add('hide-body')
+  }))
+
+  reg.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (e.target.classList.contains('reg')) {
+      reg.classList.remove('open-pop-up')
+      body.classList.remove('hide-body')
+    } else {
+      return false
+    }
+  })
+}
+registrationField()
