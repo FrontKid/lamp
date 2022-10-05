@@ -7,7 +7,7 @@ Created by:
     -slider
     -about
   Vika:
-
+    -footer
 
 
 To Change:
