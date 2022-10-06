@@ -96,8 +96,65 @@ function initMap() {
   infowindow.open(map, marker);
 
 }
-initMap()
+//initMap()
 
 //*****************************/
 //*********MAP END***********/
+//*****************************/
+
+//*****************************/
+//**RENDER POP-UP FORM START***/
+//*****************************/
+const body = document.getElementById('body')
+const log = document.querySelector('.log')
+function openClosePopUp(clickOn) {
+  clickOn.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (e.target.classList.contains(clickOn.classList[0])) {
+      clickOn.classList.remove('open-pop-up')
+      body.classList.remove('hide-body')
+    } else {
+      return false
+    }
+  })
+}
+function logInField() {
+  const entry = document.querySelector('.header__main-icon')
+  entry.addEventListener('click', (e) => {
+    e.preventDefault()
+    log.classList.add('open-pop-up')
+    body.classList.add('hide-body')
+  })
+  // render registration Pop-up
+  openClosePopUp(log)
+}
+logInField()
+function openClosePopUp(clickOn) {
+  clickOn.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (e.target.classList.contains(clickOn.classList[0])) {
+      clickOn.classList.remove('open-pop-up')
+      body.classList.remove('hide-body')
+    } else {
+      return false
+    }
+  })
+}
+function registrationField() {
+  const createAcc = document.getElementById('log__form-btn-create')
+  const reg = document.querySelector('.reg')
+  createAcc.addEventListener('click', (e) => {
+    e.preventDefault()
+    setTimeout(() => {
+      reg.classList.add('open-pop-up')
+    }, 200)
+    body.classList.add('hide-body')
+    log.classList.remove('open-pop-up')
+  })
+  // render registration Pop-up
+  openClosePopUp(reg)
+}
+registrationField()
+//*****************************/
+//****RENDER POP-UP FORM END***/
 //*****************************/
