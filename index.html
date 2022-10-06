@@ -58,39 +58,72 @@
   <!--===================================================
                   REGISTRATION POPUP PART START
         =================================================-->
-  <div class="reg">
-    <div class="reg__area">
-      <h2 class="reg__title sub-title">Регистрация</h2>
+  <div class="reg pop-up-registr-common">
+    <div class="reg__area pop-up-registr-common-area">
+      <h2 class="reg__title pop-up-registr-common-title sub-title">Регистрация</h2>
       <form class="reg__form" action="#">
         <div class="reg__form-inner">
           <div class="reg__form-item">
-            <label class="reg__form-label">
+            <label class="reg__form-label pop-up-registr-common-lable">
               <span>Имя</span>
-              <input class="reg__form-item-value" placeholder="Богдан" type="text">
+              <input autocomplete class="reg__form-item-value pop-up-registr-common-value" placeholder="Богдан"
+                type="text">
             </label>
-            <label class="reg__form-label">
+            <label class="reg__form-label pop-up-registr-common-lable">
               <span>Новый пароль</span>
-              <input class="reg__form-item-value" placeholder="****************" type="password">
+              <input autocomplete class="reg__form-item-value pop-up-registr-common-value"
+                placeholder="****************" type="password">
             </label>
           </div>
           <div class="reg__form-item">
-            <label class="reg__form-label">
+            <label class="reg__form-label pop-up-registr-common-lable">
               <span>E-mail</span>
-              <input class="reg__form-item-value" placeholder="youmail@mail.com" type="email">
+              <input autocomplete class="reg__form-item-value pop-up-registr-common-value"
+                placeholder="youmail@mail.com" type="email">
             </label>
-            <label class="reg__form-label">
+            <label class="reg__form-label pop-up-registr-common-lable">
               <span>Подтверждение пароля</span>
-              <input class="reg__form-item-value" placeholder="****************" type="password">
+              <input autocomplete class="reg__form-item-value pop-up-registr-common-value"
+                placeholder="****************" type="password">
             </label>
           </div>
         </div>
-        <button class="reg__form-btn btn" type="submit">Зарегистрироваться</button>
+        <button class="reg__form-btn pop-up-registr-common-btn btn" type="submit">Зарегистрироваться</button>
       </form>
     </div>
   </div>
   <!--===================================================
                   REGISTRATION POPUP PART END
         =================================================-->
+
+  <!--===================================================
+                  LOGIN POPUP PART START
+        =================================================-->
+  <div class="log pop-up-registr-common">
+    <div class="log__area pop-up-registr-common-area">
+      <h2 class="log__title pop-up-registr-common-title sub-title">Вход</h2>
+      <form class="log__form" action="#">
+        <div class="log__form-item">
+          <label class="log__form-label pop-up-registr-common-lable">
+            <span>E-mail</span>
+            <input autocomplete class="log__form-item-value pop-up-registr-common-value" placeholder="youmail@mail.com"
+              type="email">
+          </label>
+          <label class="log__form-label pop-up-registr-common-lable">
+            <span>Пароль</span>
+            <input autocomplete class="log__form-item-value pop-up-registr-common-value" placeholder="****************"
+              type="password">
+          </label>
+        </div>
+        <button class="log__form-btn pop-up-registr-common-btn btn" type="submit">Войти</button>
+        <button id="log__form-btn-create" class="log__form-btn log__form-btn--trans pop-up-registr-common-btn btn"
+          type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+  <!--===================================================
+                        LOGIN POPUP PART END
+              =================================================-->
 
   <!--=====================================
                     HEADER PART START
