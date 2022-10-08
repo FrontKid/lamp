@@ -119,12 +119,12 @@ function openClosePopUp(clickOn) {
   })
 }
 function logInField() {
-  const entry = document.querySelector('.header__main-icon')
-  entry.addEventListener('click', (e) => {
+  const entries = [document.querySelector('.header__main-icon'), document.getElementById('profile-mob')]
+  entries.forEach(entry => entry.addEventListener('click', (e) => {
     e.preventDefault()
     log.classList.add('open-pop-up')
     body.classList.add('hide-body')
-  })
+  }))
   // render registration Pop-up
   openClosePopUp(log)
 }

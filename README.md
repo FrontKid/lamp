@@ -6,6 +6,9 @@ Created by:
     -header
     -slider
     -about
+    -authorization page
+    -logIn popUp
+    -registration popUp
   Vika:
     -footer
 
