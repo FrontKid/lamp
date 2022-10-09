@@ -1,0 +1,33 @@
+.response {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 173.15px);
+  padding: 22px 22px;
+}
+
+.response__wrapper {
+  border: 1px solid var(--grey);
+  padding: 36px;
+  text-align: center;
+}
+
+.response__title {
+  margin: 16px 0px 10px 0px;
+}
+.response__code--bottom {
+  height: 80px;
+}
+.response__text {
+  font-size: 18px;
+  line-height: 136%;
+  text-align: center;
+  max-width: 500px;
+}
+
+.response__btn {
+  display: block;
+  max-width: 213px;
+
+  margin: 24px auto 0;
+}

@@ -9,6 +9,8 @@ Created by:
     -authorization page
     -logIn popUp
     -registration popUp
+    -404 page
+    -thanks page
   Vika:
     -footer
 
