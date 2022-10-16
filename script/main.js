@@ -96,8 +96,30 @@ function initMap() {
   infowindow.open(map, marker);
 
 }
-initMap()
+// initMap()
 
 //*****************************/
-//*********MAP END***********/
+//*********dropDown START***********/
+//*****************************/
+
+//*****************************/
+//*********dropDown End***********/
+//*****************************/
+function dropDown() {
+   const lists =  document.querySelectorAll('.dilivery__wrapper-queshions');
+   let answer =  document.querySelectorAll('.dilivery__answer');
+   const arrows =  document.querySelectorAll('.dilivery__queshion-text');
+  
+
+lists.forEach((list, index)=>{
+  list.addEventListener('click', () => {
+    answer[index].classList.toggle('active');
+    arrows[index].classList.toggle('active');
+})
+ })
+}
+  dropDown();
+
+//*****************************/
+//*********MAP START***********/
 //*****************************/
